@@ -1,0 +1,10 @@
+.places__title {
+    width: 460px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.06;
+    color: #FFFFFF;
+    margin: 0;
+    padding-right: 40px;
+    padding-bottom: 48px;
+}

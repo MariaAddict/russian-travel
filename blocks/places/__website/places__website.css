@@ -1,0 +1,8 @@
+.places__website {
+    max-width: 456px;
+    margin: 0;
+    box-sizing: border-box;
+    align-self: flex-end;
+    padding-bottom: 48px;
+}
+
