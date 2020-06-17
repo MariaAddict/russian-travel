@@ -1,0 +1,12 @@
+@import url(./__background/cover__background.css);
+@import url(./__overlay/cover__overlay.css);
+@import url(./__title/cover__title.css);
+@import url(./__subtitle/cover__subtitle.css);
+
+.cover {
+    max-width: 100%;
+    min-height: calc(740px + 2*92px) ;
+    position: relative;
+    padding: 92px 48px;
+}
+
