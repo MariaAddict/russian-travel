@@ -5,8 +5,36 @@
 
 .cover {
     max-width: 100%;
-    min-height: calc(740px + 2*92px) ;
+    height: 740px;
+    margin: 92px 48px;
+
+    background-image: url(./images/cover-trains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     position: relative;
-    padding: 92px 48px;
+    box-sizing: border-box;
+    z-index: 0;
+
+    
+   
+ 
 }
 
+.cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2A2C2F;          
+    opacity: 0.3;
+    transition: 0.5s opacity linear;
+    z-index: -1;
+}
+
+.cover:hover::before {
+    opacity: 0.8;
+}
