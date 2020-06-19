@@ -1,9 +1,39 @@
 .places__place {
     margin-bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 460px minmax(min-content, 484px);
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    grid-template-areas: 
+    "title website"
+    "image text";
+    gap: 48px 40px;
 }
 
 .places__place:last-of-type {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .places__place {
+        grid-template-columns: minmax(min-content,440px) minmax(min-content,456px);
+        gap: 48px 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .places__place {
+        grid-template-columns: minmax(min-content,340px) minmax(min-content,352px);
+        gap: 48px 28px;
+        margin-bottom: 72px;
+    }
+}
+
+/*текст не смотрелся, перенесла точку*/
+@media screen and (max-width: 570px) {
+    .places__place {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+        width: 100%;
+        height: 100%;
 }

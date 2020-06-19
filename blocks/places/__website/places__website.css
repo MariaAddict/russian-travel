@@ -1,8 +1,15 @@
 .places__website {
     max-width: 456px;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     align-self: flex-end;
-    padding-bottom: 48px;
+    grid-area: website;
+    
 }
 
+@media screen and (max-width: 570px) {
+    .places__website {
+        display: none;
+    }
+}
