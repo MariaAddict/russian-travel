@@ -10,6 +10,7 @@
 **Использованы инструменты**
 * Grid
 * Flexbox
+
 Сайт адаптирован в том числе и под мобильную версию 
 
 [Ссылка на сайт](https://mariaaddict.github.io/russian-travel/index.html)
