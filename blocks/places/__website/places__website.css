@@ -8,7 +8,7 @@
     
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {       /*изменен размер*/
     .places__website {
         display: none;
     }
