@@ -27,6 +27,8 @@
 
 @media screen and (max-width: 600px) {
     .places__image {
+        max-width: 100%;
+        min-width: 100%;
         min-height: 320px;
         margin-bottom: 32px;
         align-self: center;
@@ -42,6 +44,5 @@
 @media screen and (max-width: 320px) {   /*+ размер*/
     .places__image {
         max-height: 320px;
-        max-width: 320px;
     }
 }

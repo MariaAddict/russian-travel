@@ -1,6 +1,6 @@
 .cover__title {
     max-width: 560px;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 72px;
     line-height: 1.06;
     text-align: center;
@@ -8,14 +8,28 @@
     text-decoration: none;
     margin: 0 auto 32px;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/*надпись не помещается в блок, поэтому новая точка с другими размерами*/
+@media screen and (max-width: 720px) {
+    .cover__title {
+        font-size: 62px;
+        margin: 0 auto;
+        max-width: calc(100% - 24px*2);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .cover__title {
+        font-size: 56px;
+    }
+}
 
 @media screen and (max-width: 425px) {
     .cover__title {
         font-size: 32px;
         line-height: 1.09;
-        padding: 0;
         margin-bottom: 16px;
     }
 }

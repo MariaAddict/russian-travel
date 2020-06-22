@@ -1,6 +1,6 @@
 .lead__title {
 max-width: 720px;
-font-weight: bold;
+font-weight: 900;
 font-size: 96px;
 line-height: 1.04;
 text-align: center;
@@ -11,8 +11,25 @@ box-sizing: border-box;
 
 @media screen and (max-width: 768px) {
     .lead__title {
-        font-size: 56px;
-        line-height: 1.1;
+        margin: 0 auto;
+        max-width: calc(100% - 24px*2);
+    }
+}
+
+/*надпись не помещается в блок, поэтому новая точка с другими размерами*/
+@media screen and (max-width: 720px) {
+    .lead__title {
+        font-size: 68px;
+        line-height: 1.04;
+        margin: 0 auto;
+        max-width: calc(100% - 24px*2);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .lead__title {
+        font-size: 52px;
+        line-height: 1.04;
         margin: 0 auto;
         max-width: calc(100% - 24px*2);
     }
@@ -20,7 +37,7 @@ box-sizing: border-box;
 
 @media screen and (max-width: 425px) {
     .lead__title {
-        width: 288px;
+        max-width: 288px;
         height: 88px;
         font-size: 40px;
         line-height: 1.1;

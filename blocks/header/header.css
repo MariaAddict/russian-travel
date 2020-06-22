@@ -1,11 +1,7 @@
-@import url(./__logo/header__logo.css);
-@import url(./__links/header__links.css);
-@import url(./__lang-link/header__lang-link.css);
-
 .header {
     max-width: calc(100% - 48px*2);
     min-height: 52px;
-    margin: 0;
+    margin: 0;  
     padding: 28px 48px 56px;  
     display: flex;
     justify-content: space-between;
@@ -20,7 +16,7 @@
 
 @media screen and (max-width: 768px) {
     .header {
-        max-width: calc(100% - 24px*2);
+        max-width: calc(100% - 24px*2);         
         padding-left: 24px;
         padding-right: 24px;
     }
