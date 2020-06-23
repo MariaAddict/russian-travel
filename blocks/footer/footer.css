@@ -4,7 +4,9 @@
 @import url(./__copyright/footer__copyright.css);
 
 .footer{
-   max-width: 100%;
+   max-width: 1280px;
+   min-width: 320px;
+   margin: 0 auto;
    padding: 0 48px 24px;
    display: flex;
    justify-content: space-between;
@@ -12,7 +14,7 @@
    box-sizing: border-box;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
    .footer {
       min-height: 310px;
       padding: 0 0 24px 16px;
